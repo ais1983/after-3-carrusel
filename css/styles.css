@@ -1,0 +1,46 @@
+body{
+    background-color: aqua;
+    font-family:'Montserrat', sans-serif;
+}
+h1{
+    margin-top: 5rem;
+}
+
+
+/*CARDS*/
+.padre-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+/*TABLET*/
+@media (min-width: 768px) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 992px) {
+    .padre-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*CARRUSEL*/
+#carouselExampleFade {
+    width: 500px;
+}
+
+.carousel-item {
+    width: 500px;
+    height: 400px;
+}
+
+footer{
+    background-color: blueviolet;
+}
